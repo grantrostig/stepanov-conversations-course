@@ -8,6 +8,9 @@
 
 #include "concepts.h"
 
+// #include <utility>
+// #define StrictWeakOrdering typename
+
 template <typename T, StrictWeakOrdering Cmp>
 T& min(T& a, T& b, Cmp cmp) {
   if (cmp(b, a)) return b;
